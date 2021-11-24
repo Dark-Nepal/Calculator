@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>HTML Calculator</title>
+</head>
+<body>
+<div class="container">
+  <div class="calc-body">
+    <div class="calc-screen">
+      <div id=cal-operation></div>
+      <div id=cal-typed></div>
+    </div>
+    <div class="calc-button-row">
+      <input type="button" class="button c" value="c" onclick="c()"></input>
+      <input type="button" class="button l" value="<" onclick="backspace()"></input>
+      <input type="button" class="button l" value="x" onclick="insert('*')"></input>
+      <input type="button" class="button l" value="÷" onclick="insert('/')"></input>
+    </div>
+    <div class="calc-button-row">
+      <input type="button" class="button" value="9" onclick="insert(9)"></input>
+      <input type="button" class="button" value="8" onclick="insert(8)"></input>
+      <input type="button" class="button" value="7" onclick="insert(7)"></input>
+      <input type="button" class="button l" value="-" onclick="insert('-')"></input>
+    </div>
+    <div class="calc-button-row">
+      <input type="button" class="button" value="6"onclick="insert(6)"></input>
+      <input type="button" class="button" value="5"onclick="insert(5)"></input>
+      <input type="button" class="button" value="4"onclick="insert(4)"></input>
+      <input type="button" class="button l" value="+"onclick="insert('+')"></input>
+    </div>
+    <div class="calc-button-row">
+      <input type="button" class="button" value="3"onclick="insert(3)"></input>
+      <input type="button" class="button" value="2"onclick="insert(2)"></input>
+      <input type="button" class="button" value="1"onclick="insert(1)"></input>
+      <input type="button" style ="font-size: 18px" class="button l" value="MOD" onclick="insert('%')"></input>
+    <div class="calc-button-row">
+      <input type="button" class="button" value="0"onclick="insert(0)"></input>
+      <input type="button" class="button" value="."onclick="insert('.')"></input>
+      <input type="button" class="button l" value="%"onclick="insert('*0.01*')"></input>
+      <input type="button" class="button l" value="=" onclick="equals()"> </input>
+    </div>
+  </div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
